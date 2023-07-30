@@ -128,10 +128,11 @@ const Lists = () => {
   const displayList = (option: string) => {
     setDisplay(option);
   };
+
   return (
     <div className="">
-      <ListHeader displayList={displayList} />
-      <div className={`px-4 grid pt-8 gap-4 ${display == "grids" ? " grid-cols-3" : "grid-rows-1 w-full"} `}>
+      <ListHeader displayList={displayList} titleHeader="Lists" display={display} />
+      <div className={`px-4 grid pt-8 gap-4 ${display === "grids" ? " grid-cols-3" : "grid-rows-1 w-full"} `}>
         {data.map(project => (
           <Card key={project.id} project={project} />
         ))}
