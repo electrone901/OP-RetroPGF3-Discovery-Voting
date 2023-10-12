@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap");
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -10,7 +9,6 @@
 
 body {
   min-height: 100vh;
-
   font-family: "Inter", "Open Sans", sans-serif;
 }
 
@@ -73,7 +71,9 @@ p {
 }
 
 /* Remove increment buttons on number inputs*/
+
 /* Chrome, Safari, Edge, Opera */
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -81,8 +81,10 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
+
 input[type="number"] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .shadow-none {
@@ -92,10 +94,20 @@ input[type="number"] {
 .bg-smoke-light {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 #custom-modal-dialog {
   z-index: 1000;
 }
 
 .list__container-card_display {
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+
+.card-btn {
+  font-size: 12px;
+  padding: 8px 10px !important;
+}
+
+.card-btn svg {
+  margin-right: 6px;
 }

@@ -128,7 +128,6 @@ function ListHeader({ displayList, titleHeader, display, onCategoryChange, onShu
                 Liked
               </span>
             </button>
-            <div className="h-[18px] border-l-2 border-neutral  mx-[12px] "></div>
           </>
         )}
         {categories &&
